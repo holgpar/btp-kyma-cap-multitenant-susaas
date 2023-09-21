@@ -42,6 +42,9 @@ steps:
 
   # cnbBuild config
   cnbBuild:
+    jenkinsKubernetes:
+      securityContext:
+        runAsUser: 1001
     dockerConfigJsonCredentialsId: docker-config
     containerRegistryUrl: concise.common.repositories.cloud.sap
     containerImageTag: latest
