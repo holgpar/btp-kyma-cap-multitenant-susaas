@@ -38,7 +38,7 @@ steps:
 
   # cnbBuild config
   cnbBuild:
-    jenkinsKubernetes:
+    dockerExecuteOnKubernetes:
       securityContext:
         runAsUser: 1001
     dockerConfigJsonCredentialsId: docker-config
