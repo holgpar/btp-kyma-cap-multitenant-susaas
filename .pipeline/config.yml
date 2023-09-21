@@ -1,9 +1,10 @@
 ---
 general:
   buildTool: "npm"
-  securityContext:
-    runAsUser: 1000
-    fsGroup: 1000
+  jenkinsKubernetes:
+    securityContext:
+      runAsUser: 1000
+      fsGroup: 1000
 service:
   buildToolVersion: "N18"
 stages:
