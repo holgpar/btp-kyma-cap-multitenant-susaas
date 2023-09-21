@@ -38,9 +38,7 @@ steps:
 
   # cnbBuild config
   cnbBuild:
-    dockerExecuteOnKubernetes:
-      securityContext:
-        runAsUser: 1001
+    dockerOptions: [ "-u 1001" ]
     dockerConfigJsonCredentialsId: docker-config
     containerRegistryUrl: concise.common.repositories.cloud.sap
     containerImageTag: latest
