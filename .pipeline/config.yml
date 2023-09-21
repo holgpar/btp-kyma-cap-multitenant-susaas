@@ -3,7 +3,7 @@ general:
   buildTool: "npm"
   jenkinsKubernetes:
     securityContext:
-      runAsUser: 1000
+      runAsUser: 1001
       fsGroup: 1000
 service:
   buildToolVersion: "N18"
@@ -46,10 +46,6 @@ steps:
     containerRegistryUrl: concise.common.repositories.cloud.sap
     containerImageTag: latest
     multipleImages:
-      - path: gen/srv
-        containerImageName: susaas-images/susaas-srv
-      - path: gen/api
-        containerImageName: susaas-image/usaas-api
       - path: broker
         containerImageName: susaas-image/broker
 
