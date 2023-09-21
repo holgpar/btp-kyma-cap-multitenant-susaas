@@ -3,7 +3,7 @@ general:
   buildTool: "npm"
   jenkinsKubernetes:
     securityContext:
-      runAsUser: 1000
+      runAsUser: 1001
       fsGroup: 1000
 service:
   buildToolVersion: "N18"
